@@ -709,7 +709,9 @@ def create_ui():
 
             txt2img_prompt.submit(**txt2img_args)
             submit.click(**txt2img_args)
-
+            
+            res_switch_btn.click(lambda w, h: (h, w), inputs=[width, height], outputs=[width, height])
+            
             txt_prompt_img.change(
                 fn=modules.images.image_data,
                 inputs=[
@@ -988,7 +990,8 @@ def create_ui():
 
             img2img_prompt.submit(**img2img_args)
             submit.click(**img2img_args)
-
+            res_switch_btn.click(lambda w, h: (h, w), inputs=[width, height], outputs=[width, height])
+            
             img2img_interrogate.click(
                 fn=interrogate,
                 inputs=[init_img],
