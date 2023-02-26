@@ -124,7 +124,7 @@
     "s_churn": 0.0,
     "s_tmin": 0.0,
     "s_noise": 1.0,
-    "eta_noise_seed_delta": 0,
+    "eta_noise_seed_delta": 31337,
     "always_discard_next_to_last_sigma": false,
     "disabled_extensions": [],
     "sd_checkpoint_hash": "80d0120000b79f13262bdadfc9d28cfc65aed3a8d2abf88985831b19e01f4459",
